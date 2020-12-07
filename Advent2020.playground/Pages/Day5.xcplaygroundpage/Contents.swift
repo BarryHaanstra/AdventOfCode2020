@@ -848,7 +848,7 @@ BFFBFFFLRR
 FBBFFBFLLR
 """
 
-// Split string by double newlines to get passport entries
+// Split string by newlines
 let inputArray = input.uppercased().split(whereSeparator: \.isNewline)
 
 // Convert to seat IDs
