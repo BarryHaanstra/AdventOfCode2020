@@ -29,14 +29,14 @@ func runGame(withStartNumbers startNumbers: [Int], amountOfTurns turns: Int) -> 
     for turn in 1...startNumbers.count {
         addToMemory(number: startNumbers[turn - 1], inTurn: turn)
     }
-    
+        
     // Run game x turns
     for turn in (startNumbers.count + 1)...turns {
         var newNumber = 0
         if (!firstSpoken(number: lastNumber)) {
             newNumber = newNumberForNumber(number: lastNumber)
         }
-        
+
         addToMemory(number: newNumber, inTurn: turn)
     }
     
